@@ -344,25 +344,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\buval\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet": {}
+    "C:\\Users\\buval\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\buval\\OneDrive\\Рабочий стол\\EmailParser\\EmailParser\\EmailParser.csproj",
+      "projectUniqueName": "D:\\projects\\email-checker\\EmailParser\\EmailParser\\EmailParser.csproj",
       "projectName": "EmailParser",
-      "projectPath": "C:\\Users\\buval\\OneDrive\\Рабочий стол\\EmailParser\\EmailParser\\EmailParser.csproj",
+      "projectPath": "D:\\projects\\email-checker\\EmailParser\\EmailParser\\EmailParser.csproj",
       "packagesPath": "C:\\Users\\buval\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\buval\\OneDrive\\Рабочий стол\\EmailParser\\EmailParser\\obj\\",
+      "outputPath": "D:\\projects\\email-checker\\EmailParser\\EmailParser\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet"
-      ],
       "configFilePaths": [
         "C:\\Users\\buval\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

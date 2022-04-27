@@ -12,26 +12,20 @@ using DnsClient;
 using EmailParser;
 using EmailParser.Resources;
 
-await ReadInfo();
+//await ReadInfo();
 
-/*string path = @"C:\Users\buval\RiderProjects\EmailParser\EmailParser\Resources\Emails2Check.xlsx";
+
+string path = @"C:\Users\buval\RiderProjects\EmailParser\EmailParser\Resources\Emails2Check.xlsx";
 XlsxParser parser = new XlsxParser();
-List<Email> emailList = parser.GetEmailList(path);
-EmailChecker checker = new EmailChecker(emailList);
-checker.StartCheck();*/
+EmailChecker checker = new EmailChecker(parser.GetEmailList(path));
+await checker.StartCheck();
+checker.WriteResultInFiles();
 
-DomainHelper dm = new DomainHelper();
+/*Email email = new Email("buvaltsev.art@yandex.ru");
+HashSet<Email> set = new HashSet<Email> {email};
 
-foreach (var domain in DomainHelper.GetAvailableDomain())
-{
-    dm.MxRecordsExists(domain);
-}
-
-/*foreach (var smtp in DomainHelper.GetSmtpDomain())
-{
-    WriteSmtpDomain.Write(smtp.Key + " " + smtp.Value);
-}
-Console.WriteLine(dm.MxRecordsExists("google.ru"));*/
+EmailChecker check = new EmailChecker(set);
+await check.StartCheck();*/
 
 // Читаем известные данные.
 async Task ReadInfo()

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7GEbTb+pgPyRUyW7zMKMXggqXagOEpzXvwTMuKGb0kKaYXDcMfzBEEWjZhpWIkQFLvkK0KulTQUs0dt6PNV9jQ==",
+  "dgSpecHash": "TotvvZlPlM6Ken+wWED3u9AWlVXz9pyJZ2aa15MDDhQx6QsbSnZ5LD9LCuB3cVjAsBTXDiXoKdHhLY+pc9PG9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\buval\\OneDrive\\Рабочий стол\\EmailParser\\EmailParser\\EmailParser.csproj",
+  "projectFilePath": "D:\\projects\\email-checker\\EmailParser\\EmailParser\\EmailParser.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\buval\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
     "C:\\Users\\buval\\.nuget\\packages\\exceldatareader\\3.7.0-develop00310\\exceldatareader.3.7.0-develop00310.nupkg.sha512",

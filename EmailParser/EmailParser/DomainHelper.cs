@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using DnsClient;
 using DnsClient.Protocol;
+using EmailParser.Resources;
 
 namespace EmailParser;
 
@@ -10,9 +11,11 @@ public class DomainHelper
     private static HashSet<string> _availableHost = new HashSet<string>();
     private static Dictionary<string, string> smtpServer = new Dictionary<string, string>();
     private static HashSet<string> _unavailableHost = new HashSet<string>();
+    private HashSet<string> _longResponse;
 
     public DomainHelper()
     {
+        _longResponse = new HashSet<string>();
     }
 
     /// <summary>
@@ -20,84 +23,68 @@ public class DomainHelper
     /// </summary>
     /// <param name="domain">Domain name</param>
     /// <returns>true if connection successful, else false</returns>
-    public bool IsExists(string domain)
+    public async Task<bool> IsExists(string domain)
     {
         try
         {
-            if (_availableHost.Contains(domain))
-            {
-                return true;
-            }
-
+            //Console.WriteLine("Пробуем подключиться");
             if (_unavailableHost.Contains(domain))
             {
                 return false;
             }
 
+            if (smtpServer.ContainsKey(domain))
+            {
+                return true;
+            }
+
             IPHostEntry hostEntry = Dns.GetHostEntry(domain);
-            _availableHost.Add(hostEntry.HostName);
-            return true;
+            return await TryToAddSmtpServerToDomain(domain);
         }
         catch (Exception e)
         {
+          //  Console.WriteLine("Ошибка подключения");
             _unavailableHost.Add(domain);
             return false;
         }
     }
 
-    /// <summary>
-    /// Checks if server has mx records
-    /// </summary>
-    /// <param name="adress"></param>
-    /// <returns>true if mx records exists, else false</returns>
-    public bool MxRecordsExists(string adress)
+    private async Task<bool> TryToAddSmtpServerToDomain(string domain)
     {
         try
         {
+            //Console.WriteLine("check started");
             var lookup = new LookupClient();
-            var result = lookup.Query(adress, QueryType.MX);
-            //Console.WriteLine("Started method");
-            foreach (var record in result.Answers)
-            {
-                string[] stringSeparators = new string[] { " mx ", " MX ", " Mx " };
-                string smtp = record.ToString().Split(stringSeparators, StringSplitOptions.None)[1].Split(" ")[1];
-                if (string.IsNullOrEmpty(smtp))
-                {
-                    Console.WriteLine(record);
-                }
+            var result = lookup.QueryAsync(domain, QueryType.MX);
+            await result;
 
-                /*  Console.WriteLine(smtp);
-                Console.WriteLine(record.DomainName);
-                Console.WriteLine(record);
-   */
-                // Добавить проверки на null.
-                if (!smtpServer.ContainsKey(record.DomainName))
-                {
-                    smtpServer.Add(record.DomainName, smtp);
-                    WriteSmtpDomain.Write(record.DomainName.ToString() + " " + smtp);
-                }
-            }
+            if (result.Result.Answers.Count == 0)
+                return false;
 
-            return result.Answers.Count != 0;
+            // Переписать под цикл, который перебирает все полученные записи, если в первой не попалось mx.
+            DnsResourceRecord record = result.Result.Answers[0];
+            string[] stringSeparators = new string[] {" mx ", " MX ", " Mx "};
+
+            // Переделать под дургую проверку. Почему sochi.mail.ru ссылается на mx.yandex.ru?
+            if (!record.ToString().Contains("mx") && !record.ToString().Contains("Mx") &&
+                !record.ToString().Contains("MX"))
+                return false;
+
+            string smtp = record.ToString().Split(stringSeparators, StringSplitOptions.None)[1].Split(" ")[1];
+            smtp = smtp.Remove(smtp.Length - 1);
+            string domainName = record.DomainName.ToString().Remove(record.DomainName.ToString().Length - 1);
+            smtpServer.Add(domainName, smtp);
+            return true;
         }
         catch (DnsClient.DnsResponseException)
         {
             // Плохие респонсы записать в отдельный список и перепроверить.
-            Console.WriteLine(smtpServer);
+            // Написать логику под перепровекру долгих респонсов и удаления из недоступных в случае успеха.
+            _longResponse.Add(domain);
             return false;
         }
     }
-
-    public void GetMxRecords(DnsQueryResponse list)
-    {
-        if (list.Answers.Count == 0)
-            throw new ArgumentException("Не найдены mx записи.");
-
-        foreach (var record in list.Answers)
-        {
-            Console.WriteLine(record);
-        }
-    }
+    
 
     public static HashSet<string> GetAvailableDomain()
     {
@@ -112,5 +99,10 @@ public class DomainHelper
     public static Dictionary<string, string> GetSmtpDomain()
     {
         return smtpServer;
+    }
+
+    public HashSet<string> GetLongResponse()
+    {
+        return _longResponse;
     }
 }

@@ -6,7 +6,7 @@ namespace EmailParser;
 
 public class XlsxParser : IXlsxParser
 {
-    public List<Email> GetEmailList(string path)
+    public HashSet<Email> GetEmailList(string path)
     {
         System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
         FileStream fStream = File.Open(path,
@@ -14,8 +14,8 @@ public class XlsxParser : IXlsxParser
         IExcelDataReader excelDataReader = ExcelReaderFactory.CreateOpenXmlReader(fStream);
         DataSet resultDataSet = excelDataReader.AsDataSet();
 
-        List<Email> emails = new List<Email>(resultDataSet.Tables[0].Rows.Count);
-        Console.WriteLine(emails.Capacity);
+        HashSet<Email> emails = new HashSet<Email>(resultDataSet.Tables[0].Rows.Count);
+        
         for (var i = 1; i < resultDataSet.Tables[0].Rows.Count; i++)
         {
             for (var j = 0; j < resultDataSet.Tables[0].Columns.Count; j++)
