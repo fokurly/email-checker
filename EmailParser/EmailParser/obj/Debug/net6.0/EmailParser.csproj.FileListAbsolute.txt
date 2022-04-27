@@ -1,0 +1,38 @@
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.exe
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.deps.json
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.runtimeconfig.json
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.dll
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.pdb
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.csproj.AssemblyReference.cache
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.AssemblyInfoInputs.cache
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.AssemblyInfo.cs
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.csproj.CoreCompileInputs.cache
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.csproj.CopyComplete
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.dll
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\refint\EmailParser.dll
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.pdb
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.genruntimeconfig.cache
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\obj\Debug\net6.0\ref\EmailParser.dll
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\bin\Debug\net6.0\ExcelDataReader.dll
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\bin\Debug\net6.0\ExcelDataReader.DataSet.dll
+C:\Users\buval\RiderProjects\EmailParser\EmailParser\bin\Debug\net6.0\DnsClient.dll
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.exe
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.deps.json
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.runtimeconfig.json
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.dll
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.pdb
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\bin\Debug\net6.0\DnsClient.dll
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\bin\Debug\net6.0\ExcelDataReader.dll
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\bin\Debug\net6.0\ExcelDataReader.DataSet.dll
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.csproj.AssemblyReference.cache
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.AssemblyInfoInputs.cache
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.AssemblyInfo.cs
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.csproj.CoreCompileInputs.cache
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.csproj.CopyComplete
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.dll
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\refint\EmailParser.dll
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.pdb
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.genruntimeconfig.cache
+C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\ref\EmailParser.dll
