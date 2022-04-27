@@ -4,7 +4,6 @@ namespace EmailParser.Resources;
 
 public class Email
 {
-    private string _mxServer;
     public EmailStatus Status;
     public Email(string name)
     {
@@ -21,6 +20,7 @@ public class Email
         }
     }
     
+    public string MxServer { get; set; }
     public string Name { get; }
 
     public string Domain { get; }
@@ -36,7 +36,6 @@ public class Email
 
         return this.Name.Equals(item.Name);
     }
-    
     
     public override int GetHashCode()
     {

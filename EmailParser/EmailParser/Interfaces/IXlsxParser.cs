@@ -4,5 +4,5 @@ namespace EmailParser;
 
 public interface IXlsxParser
 {
-    List<Email> GetEmailList(string path);
+    HashSet<Email> GetEmailList(string path);
 }

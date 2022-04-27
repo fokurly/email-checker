@@ -36,3 +36,22 @@ C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debu
 C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.pdb
 C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.genruntimeconfig.cache
 C:\Users\buval\OneDrive\Рабочий стол\EmailParser\EmailParser\obj\Debug\net6.0\ref\EmailParser.dll
+D:\projects\email-checker\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.exe
+D:\projects\email-checker\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.deps.json
+D:\projects\email-checker\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.runtimeconfig.json
+D:\projects\email-checker\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.dll
+D:\projects\email-checker\EmailParser\EmailParser\bin\Debug\net6.0\EmailParser.pdb
+D:\projects\email-checker\EmailParser\EmailParser\bin\Debug\net6.0\DnsClient.dll
+D:\projects\email-checker\EmailParser\EmailParser\bin\Debug\net6.0\ExcelDataReader.dll
+D:\projects\email-checker\EmailParser\EmailParser\bin\Debug\net6.0\ExcelDataReader.DataSet.dll
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.csproj.AssemblyReference.cache
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.AssemblyInfoInputs.cache
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.AssemblyInfo.cs
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.csproj.CoreCompileInputs.cache
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.csproj.CopyComplete
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.dll
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\refint\EmailParser.dll
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.pdb
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\EmailParser.genruntimeconfig.cache
+D:\projects\email-checker\EmailParser\EmailParser\obj\Debug\net6.0\ref\EmailParser.dll
