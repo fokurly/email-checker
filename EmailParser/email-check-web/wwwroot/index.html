@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Email checking service</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-blend-mode: multiply;
+            background-color: #A3D0C3
+        }
+
+        div {
+            padding: 100px 0
+        }
+
+        form {
+            position: relative;
+            width: 350px;
+            margin: 0 auto;
+        }
+
+        .d1 {
+            background: #A3D0C3;
+        }
+
+        .d1 input {
+            width: 100%;
+            height: 42px;
+            padding-left: 10px;
+            border: 2px solid #7BA7AB;
+            border-radius: 5px;
+            outline: none;
+            background: #F9F0DA;
+            color: #9E9C9C;
+            cursor: pointer;
+        }
+
+        .d1 button {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            width: 42px;
+            height: 42px;
+            border: none;
+            background: #7BA7AB;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .d1 button:before {
+            content: "\f178";
+            font-family: FontAwesome, fantasy;
+            font-size: 16px;
+            color: #F9F0DA;
+            cursor: pointer;
+        }
+
+        .d1 input[type="file"] {
+            display: none;
+        }
+
+        .d1 label {
+            color: #B4886B;
+            font-weight: bold;
+            display: block;
+            width: 380px;
+            height: 42px;
+            float: inside;
+        }
+
+        IMG.img {
+            padding-top: 85px;
+            width: 300px;
+            height: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        label.labell {
+            padding-top: 40px;
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            width: 300px;
+            height: 42px;
+            border-radius: 0 5px 5px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="d1">
+    <form method="post" action="sendEmail">
+        <input name="email" type="email" placeholder="Введите адрес для проверки email здесь..." required>
+        <button type="submit"></button>
+    </form>
+
+    <form id="form" class="topBefore" action="upload" method="post" enctype="multipart/form-data">
+        <label for="file-upload" class="custom-file-upload">
+            Нажмите, чтобы загрузить файл с расширением .xlsx
+        </label>
+        <input id="file-upload" type="file" name="upload"/>
+        <input type="submit" value="Начать проверку адресов из файла"/>
+        <label class="labell"> Так должен выглядеть файл для загрузки: </label>
+    </form>
+
+    <img src="images/file-example.jpg" class="img"  alt="Пример файла, который можно загрузить для проверки.">
+</div>
+</body>
+</html>
