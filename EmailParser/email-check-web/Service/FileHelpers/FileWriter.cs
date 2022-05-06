@@ -6,10 +6,10 @@ public static class FileWriter
     {
         fileName += ".txt";
         using StreamWriter writer = new StreamWriter(fileName, true);
-        writer.WriteLine(email.Name + " " + email.PassedChecks);
+        writer.WriteLine(email.Name + "; " + email.PassedChecks);
     }
 
-    public static void WriteSmtpServerWithDomenToFile(string str)
+    public static void WriteSmtpServerWithDomainToFile(string str)
     {
         using StreamWriter writer = new StreamWriter("available_smtp_domain.txt", true);
         writer.WriteLine(str);
