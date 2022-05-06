@@ -59,3 +59,16 @@ aeoncorp.ru mx.aeoncorp.ru
 yahoo.co.in mx-apac.mail.gm0.yahoodns.net
 Zaslavsky.org zaslavsky-org.mail.protection.outlook.com
 digisurf.com.au asav.tpg.com.au
+yandex.ru mx.yandex.ru
+yandex.ru mx.yandex.ru
+mail.ru mxs.mail.ru
+gmail.com gmail-smtp-in.l.google.com
+rambler.ru inmx.rambler.ru
+bk.ru mxs.mail.ru
+zeptertula.ru mx.yandex.ru
+yandex.ru mx.yandex.ru
+mail.ru mxs.mail.ru
+gmail.com gmail-smtp-in.l.google.com
+rambler.ru inmx.rambler.ru
+bk.ru mxs.mail.ru
+zeptertula.ru mx.yandex.ru
