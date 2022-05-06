@@ -114,7 +114,7 @@ public class EmailChecker
         //  В конце дописать статистику.
         foreach (var smtp in DomainHelper.GetSmtpDomain())
         {
-            FileWriter.WriteSmtpServerWithDomenToFile(smtp.Key + " " + smtp.Value);
+            FileWriter.WriteSmtpServerWithDomainToFile(smtp.Key + " " + smtp.Value);
         }
     }
 
