@@ -32,9 +32,6 @@ public class EmailChecker
 
     public async Task StartCheck()
     {
-        Console.WriteLine("Number of email for checking - " + _emails.Count);
-
-        Console.WriteLine("Start format checking.....");
         int fictionalCount = 0;
         foreach (Email mail in _emails)
         {
@@ -51,22 +48,9 @@ public class EmailChecker
                 }
         }
 
-        Console.WriteLine("Format checking done");
-        Console.WriteLine("Number of fictional email - " + fictionalCount);
-        // Проверка доступности домена.
-        Console.WriteLine("Start checking availability of domain....");
-
         HashSet<string> tempDomains = new HashSet<string>(from obj in _emails
             where obj.Status == EmailStatus.Unknown
             select obj.Domain);
-
-        /* foreach (var email in _emails)
-         {
-             if (email.Status == EmailStatus.Unknown)
-             {
-                 tempDomains.Add(email.Domain);
-             }
-         }*/
 
         DomainHelper helper = new DomainHelper();
         var domains = tempDomains.AsParallel().Select(s => helper.IsExists(s));
@@ -86,13 +70,7 @@ public class EmailChecker
                     email.PassedChecks += "Domain is ok; ";
                 }
         }
-
-        Console.WriteLine("Availability and existing of mx records completed.");
-        Console.WriteLine("Number of fictional email - " + fictionalCount);
-
-        Console.WriteLine("Checking for mx records of current email.....");
-
-        // Переписать запросы многопоточки????
+        
         foreach (var s in _emails)
         {
             if (s.Status == EmailStatus.Unknown)

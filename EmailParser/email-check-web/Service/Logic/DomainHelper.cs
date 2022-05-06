@@ -27,7 +27,6 @@ public class DomainHelper
     {
         try
         {
-            //Console.WriteLine("Пробуем подключиться");
             if (_unavailableHost.Contains(domain))
             {
                 return false;
@@ -38,13 +37,11 @@ public class DomainHelper
                 return true;
             }
 
-            //IAggregatePartner partnerOperations = null;
-            //bool result = partnerOperations.Domains.ByDomain(domain).Exists();
+
             IPHostEntry hostEntry = await Dns.GetHostEntryAsync(domain);
             bool res = await TryToAddSmtpServerToDomain(domain);
             if (!res && _availableHost.Contains(domain))
             {
-                Console.WriteLine("Вторая проверка");
                 res = await TryToAddSmtpServerToDomain(domain);
                 if (!res && _availableHost.Contains(domain))
                 {
@@ -71,15 +68,12 @@ public class DomainHelper
 
             if (result.Result.Answers.Count == 0)
             {
-                Console.WriteLine("Нет записей" + domain);
                 return false;
             }
 
-            // Переписать под цикл, который перебирает все полученные записи, если в первой не попалось mx или сервер не ответил.
             DnsResourceRecord record = result.Result.Answers[0];
             string[] stringSeparators = {" mx ", " MX ", " Mx "};
 
-            // Переделать под дургую проверку. Почему sochi.mail.ru ссылается на mx.yandex.ru?
             if (!record.ToString().Contains("mx") && !record.ToString().Contains("Mx") &&
                 !record.ToString().Contains("MX"))
             {
@@ -95,9 +89,6 @@ public class DomainHelper
         }
         catch (DnsClient.DnsResponseException)
         {
-            // Плохие респонсы записать в отдельный список и перепроверить.
-            // Написать логику под перепровекру долгих респонсов и удаления из недоступных в случае успеха.
-            Console.WriteLine("Долгий ответ + " + domain);
             _longResponse.Add(domain);
             return false;
         }
@@ -115,10 +106,7 @@ public class DomainHelper
             }
 
             string smtpp = GetSmtpDomain()[email.Domain];
-
             newClient.Connect(smtpp, 25);
-            Console.WriteLine(email.Name + "    " + email.Domain + "    " + GetSmtpDomain()[email.Domain]);
-            Console.WriteLine("Подключились всё ок");
 
             const string CRLF = "\r\n";
             var data = "EHLO lo" + CRLF;

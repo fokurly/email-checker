@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5RDyw90S+AcS3Eo9sdtJ99eudHMyRpn8VruWtYWddDs=",
+  "Hash": "i7XuE4UB8jhFBYrD0ZcDObMCgJAKjf3KUVsN5vnTV+o=",
   "Source": "email-check-web",
   "BasePath": "_content/email-check-web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "email-check-web\\wwwroot",
       "Source": "email-check-web",
-      "ContentRoot": "C:\\Users\\buval\\RiderProjects\\email-check-web\\email-check-web\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\wwwroot\\",
       "BasePath": "_content/email-check-web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\buval\\RiderProjects\\email-check-web\\email-check-web\\wwwroot\\images\\file-example.jpg",
+      "Identity": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\wwwroot\\images\\file-example.jpg",
       "SourceId": "email-check-web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\buval\\RiderProjects\\email-check-web\\email-check-web\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\wwwroot\\",
       "BasePath": "_content/email-check-web",
       "RelativePath": "images/file-example.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\images\\file-example.jpg"
     },
     {
-      "Identity": "C:\\Users\\buval\\RiderProjects\\email-check-web\\email-check-web\\wwwroot\\index.html",
+      "Identity": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\wwwroot\\index.html",
       "SourceId": "email-check-web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\buval\\RiderProjects\\email-check-web\\email-check-web\\wwwroot\\",
+      "ContentRoot": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\wwwroot\\",
       "BasePath": "_content/email-check-web",
       "RelativePath": "index.html",
       "AssetKind": "All",
