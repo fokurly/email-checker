@@ -21,10 +21,10 @@ app.Run(async (context) =>
         {
             EmailChecker checker = new EmailChecker(email, id);
             await checker.StartCheck();
-            await response.WriteAsync("Проверка завершена: \n");
-            Email res = checker.GetEmail();
-
-            await context.Response.WriteAsync(res.Name + " - " + res.PassedChecks);
+            checker.WriteResultInFiles();
+            context.Response.Headers.ContentDisposition = "attachment; filename=result.txt";
+            await context.Response.SendFileAsync("result_" + id + ".txt");
+            File.Delete("result_" + id + ".txt");
         }
     }
     else if (context.Request.Method == "POST" && context.Request.Path == "/upload")
