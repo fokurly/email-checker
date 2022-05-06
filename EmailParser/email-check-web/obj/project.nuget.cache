@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GVvSm+VYtg+nGyDsFHXwen1FMFem0ASAguv6wb4rbsHW82r1JUIihIPWOEN2TdoXAm//mvJxb7+u5sUrPLiu5w==",
+  "dgSpecHash": "kDfg2dK2uIVfvmc1T6R611+NeReRWjosq1kLvi7TRxjJ+DyOEjerHefEll2QXu95mY6LOATSL3m9MSI2ARFsMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\buval\\RiderProjects\\email-check-web\\email-check-web\\email-check-web.csproj",
+  "projectFilePath": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\buval\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
     "C:\\Users\\buval\\.nuget\\packages\\exceldatareader\\3.7.0-develop00310\\exceldatareader.3.7.0-develop00310.nupkg.sha512",

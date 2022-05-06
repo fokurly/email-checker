@@ -3197,11 +3197,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\buval\\RiderProjects\\email-check-web\\email-check-web\\email-check-web.csproj",
+      "projectUniqueName": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj",
       "projectName": "email-check-web",
-      "projectPath": "C:\\Users\\buval\\RiderProjects\\email-check-web\\email-check-web\\email-check-web.csproj",
+      "projectPath": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj",
       "packagesPath": "C:\\Users\\buval\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\buval\\RiderProjects\\email-check-web\\email-check-web\\obj\\",
+      "outputPath": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\buval\\AppData\\Roaming\\NuGet\\NuGet.Config",
