@@ -41,7 +41,7 @@ app.Run(async (context) =>
         {
             if (Path.GetExtension(file.FileName) != ".xlsx")
             {
-                await response.WriteAsync(Path.GetExtension(file.FileName));
+                await context.Response.SendFileAsync("wwwroot/index.html");
             }
             else
             {
