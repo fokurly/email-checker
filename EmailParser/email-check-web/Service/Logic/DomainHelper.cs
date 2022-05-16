@@ -57,7 +57,12 @@ public class DomainHelper
             return false;
         }
     }
-
+    
+    /// <summary>
+    /// Tries to find smtp server on current domain.
+    /// </summary>
+    /// <param name="domain"></param>
+    /// <returns></returns>
     private async Task<bool> TryToAddSmtpServerToDomain(string domain)
     {
         try
@@ -67,9 +72,7 @@ public class DomainHelper
             await result;
 
             if (result.Result.Answers.Count == 0)
-            {
                 return false;
-            }
 
             DnsResourceRecord record = result.Result.Answers[0];
             string[] stringSeparators = {" mx ", " MX ", " Mx "};
@@ -94,11 +97,16 @@ public class DomainHelper
         }
     }
 
+    /// <summary>
+    /// Method tries to find mx records on smtp server of current email. 
+    /// </summary>
+    /// <param name="email"></param>
     public async Task StartSmtpCheck(Email email)
     {
         TcpClient newClient = new TcpClient();
         try
         {
+            // Mail.ru always returns true, yahoo.com just blocks your ip address. Unreal to check emails on this domains with current way.
             if (email.Domain is "yahoo.com" or "mail.ru")
             {
                 email.Status = EmailStatus.Real;
@@ -106,7 +114,7 @@ public class DomainHelper
             }
 
             string smtpp = GetSmtpDomain()[email.Domain];
-            newClient.Connect(smtpp, 25);
+            await newClient.ConnectAsync(smtpp, 25);
 
             const string CRLF = "\r\n";
             var data = "EHLO lo" + CRLF;
@@ -146,6 +154,12 @@ public class DomainHelper
         }
     }
 
+
+    /// <summary>
+    /// Reads data from NetworkStream.
+    /// </summary>
+    /// <param name="netStrm"></param>
+    /// <returns></returns>
     private string ReadDataFromNetStream(ref NetworkStream netStrm)
     {
         StringBuilder response = new StringBuilder();
@@ -159,6 +173,12 @@ public class DomainHelper
         return response.ToString();
     }
 
+    
+    /// <summary>
+    /// If response from server contains 250 - ok. Any other - false;
+    /// </summary>
+    /// <param name="response"></param>
+    /// <returns></returns>
     private bool ParseSmtpServerResponse(string response)
     {
         if (response.Contains("250"))
@@ -170,21 +190,38 @@ public class DomainHelper
     }
 
 
+    /// <summary>
+    /// Getter of _availableHost.
+    /// </summary>
+    /// <returns></returns>
     public static HashSet<string> GetAvailableDomain()
     {
         return _availableHost;
     }
 
+    /// <summary>
+    /// Getter of _unavalableHost.
+    /// </summary>
+    /// <returns></returns>
     public static HashSet<string> GetUnavailableDomain()
     {
         return _unavailableHost;
     }
 
+
+    /// <summary>
+    /// Getter of smtpServer.
+    /// </summary>
+    /// <returns></returns>
     public static Dictionary<string, string> GetSmtpDomain()
     {
         return smtpServer;
     }
 
+    /// <summary>
+    /// Getter for _longResponse.
+    /// </summary>
+    /// <returns></returns>
     public HashSet<string> GetLongResponse()
     {
         return _longResponse;

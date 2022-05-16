@@ -14,7 +14,12 @@ public class EmailChecker
     private HashSet<Email> _emails;
     private HashSet<Email> _lastListEmail;
     private string _id;
-
+    
+    /// <summary>
+    /// Constructor for checking list of emails.
+    /// </summary>
+    /// <param name="emails"></param>
+    /// <param name="id"></param>
     public EmailChecker(HashSet<Email> emails, string id = "")
     {
         _emails = emails;
@@ -22,6 +27,12 @@ public class EmailChecker
         _id = id;
     }
 
+    
+    /// <summary>
+    /// Constructor for checking list of emails.
+    /// </summary>
+    /// <param name="email"></param>
+    /// <param name="id"></param>
     public EmailChecker(string email, string id = "")
     {
         _emails = new HashSet<Email>();
@@ -29,7 +40,10 @@ public class EmailChecker
         _lastListEmail = new HashSet<Email>();
         _id = id;
     }
-
+    
+    /// <summary>
+    /// Method runs all types of checking.  
+    /// </summary>
     public async Task StartCheck()
     {
         int fictionalCount = 0;
@@ -98,23 +112,17 @@ public class EmailChecker
 
         Console.WriteLine("Checking done.");
         Console.WriteLine("Number of fictional email - " + fictionalCount);
-
-        fictionalCount = 0;
     }
 
-
+    /// <summary>
+    /// Writes result of checking in file.
+    /// </summary>
     public void WriteResultInFiles()
     {
         Console.WriteLine("Запись в файлы....");
         foreach (Email mail in _emails)
         {
             FileWriter.WriteResultMaleToFile(mail, "result_" + _id);
-        }
-
-        //  В конце дописать статистику.
-        foreach (var smtp in DomainHelper.GetSmtpDomain())
-        {
-            FileWriter.WriteSmtpServerWithDomainToFile(smtp.Key + " " + smtp.Value);
         }
     }
 
@@ -128,9 +136,5 @@ public class EmailChecker
     {
         return MailAddress.TryCreate(email, out var mailAddress);
     }
-
-    public Email GetEmail()
-    {
-        return _emails.First();
-    }
+    
 }

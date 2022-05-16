@@ -18,7 +18,6 @@
         }
     }
     
-    public string LifeTime { get; set; }
     public string Name { get; }
 
     public string Domain { get; }
