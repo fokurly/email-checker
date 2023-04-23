@@ -4,6 +4,12 @@ namespace email_check_web.Service.FileHelpers;
 
 public class XlsxParser : IXlsxParser
 {
+    /// <summary>
+    /// Method reads .xlsx file from 1 to last line and adds line which is not null or empty for
+    /// further verification.
+    /// </summary>
+    /// <param name="path"></param>
+    /// <returns></returns>
     public HashSet<Email> GetEmailList(string path)
     {
         System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
