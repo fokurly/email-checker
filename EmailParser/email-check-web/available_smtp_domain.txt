@@ -72,3 +72,10 @@ gmail.com gmail-smtp-in.l.google.com
 rambler.ru inmx.rambler.ru
 bk.ru mxs.mail.ru
 zeptertula.ru mx.yandex.ru
+yandex.ru mx.yandex.ru
+yandex.ru mx.yandex.ru
+bk.ru mxs.mail.ru
+gmail.com alt1.gmail-smtp-in.l.google.com
+rambler.ru inmx.rambler.ru
+mail.ru mxs.mail.ru
+zeptertula.ru mx.yandex.ru

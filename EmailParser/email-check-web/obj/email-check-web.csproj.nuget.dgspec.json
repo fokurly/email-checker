@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj": {}
+    "C:\\Users\\buval\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj": {}
   },
   "projects": {
-    "D:\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj": {
+    "C:\\Users\\buval\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj",
+        "projectUniqueName": "C:\\Users\\buval\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj",
         "projectName": "email-check-web",
-        "projectPath": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj",
+        "projectPath": "C:\\Users\\buval\\projects\\email-checker\\EmailParser\\email-check-web\\email-check-web.csproj",
         "packagesPath": "C:\\Users\\buval\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\email-checker\\EmailParser\\email-check-web\\obj\\",
+        "outputPath": "C:\\Users\\buval\\projects\\email-checker\\EmailParser\\email-check-web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\buval\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\buval\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,6 +53,10 @@
             "Microsoft.Store.PartnerCenter": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0-preview.2, )"
             }
           },
           "imports": [

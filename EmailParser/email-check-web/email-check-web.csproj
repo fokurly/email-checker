@@ -17,6 +17,7 @@
       <PackageReference Include="ExcelDataReader" Version="3.7.0-develop00310" />
       <PackageReference Include="ExcelDataReader.DataSet" Version="3.7.0-develop00310" />
       <PackageReference Include="Microsoft.Store.PartnerCenter" Version="3.0.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0-preview.2" />
     </ItemGroup>
 
     <ItemGroup>
