@@ -1,6 +1,4 @@
-﻿using Npgsql;
-
-namespace email_check_web.Service.Controllers;
+﻿namespace email_check_web.Service.Controllers;
 
 using Microsoft.EntityFrameworkCore;
 
