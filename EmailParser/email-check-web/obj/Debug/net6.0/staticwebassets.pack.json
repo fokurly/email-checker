@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/Dockerfile.txt",
+      "PackagePath": "staticwebassets/Dockerfile.txt"
+    },
+    {
+      "Id": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/images/file-example.jpg",
+      "PackagePath": "staticwebassets/images/file-example.jpg"
+    },
+    {
+      "Id": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.email-check-web.props",
+      "PackagePath": "build\\email-check-web.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.email-check-web.props",
+      "PackagePath": "buildMultiTargeting\\email-check-web.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.email-check-web.props",
+      "PackagePath": "buildTransitive\\email-check-web.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.email-check-web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

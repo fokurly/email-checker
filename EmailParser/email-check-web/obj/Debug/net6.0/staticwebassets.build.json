@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "F3gIVI/3V9aAL13PwlFFi+9ouzfYsZvE0mXVM1R/05c=",
+  "Source": "email-check-web",
+  "BasePath": "_content/email-check-web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "email-check-web/wwwroot",
+      "Source": "email-check-web",
+      "ContentRoot": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/",
+      "BasePath": "_content/email-check-web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/Dockerfile.txt",
+      "SourceId": "email-check-web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/",
+      "BasePath": "_content/email-check-web",
+      "RelativePath": "Dockerfile.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Dockerfile.txt"
+    },
+    {
+      "Identity": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/images/file-example.jpg",
+      "SourceId": "email-check-web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/",
+      "BasePath": "_content/email-check-web",
+      "RelativePath": "images/file-example.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/file-example.jpg"
+    },
+    {
+      "Identity": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/index.html",
+      "SourceId": "email-check-web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/a1234/Downloads/email-checker-main/EmailParser/email-check-web/wwwroot/",
+      "BasePath": "_content/email-check-web",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}
