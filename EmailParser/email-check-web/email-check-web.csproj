@@ -10,7 +10,6 @@
     <ItemGroup>
       <Folder Include="Files" />
       <Folder Include="uploads" />
-      <Folder Include="docker-compose\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -34,9 +33,6 @@
       <_ContentIncludedByDefault Remove="wwwroot\js\jquery.easing.1.3.js" />
     </ItemGroup>
 
-    <ItemGroup>
-      <None Remove="docker-compose\" />
-    </ItemGroup>
     <ItemGroup>
       <None Include="wwwroot\index.html" />
     </ItemGroup>

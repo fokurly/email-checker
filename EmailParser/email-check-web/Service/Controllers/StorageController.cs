@@ -15,6 +15,7 @@ public class MyDbContext : DbContext
     {
         optionsBuilder.UseSqlite("Data Source=database.db");
     }
+
     public DbSet<Domain> ActiveDomains { get; set; }
     public DbSet<Smtp> ActiveSMTPs { get; set; }
 }

@@ -1,6 +1,7 @@
 ﻿public class Email
 {
-    public EmailStatus Status;
+
+    public EmailStatus Status { get; set; }
 
     public string PassedChecks = "";
     public Email(string name)
